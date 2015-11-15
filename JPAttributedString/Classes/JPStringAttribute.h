@@ -62,8 +62,9 @@
 /**
  *  NSShadowAttributeName
  */
+#if TARGET_OS_IOS
 @property (strong, nonatomic) NSShadow *shadow;
-
+#endif
 /**
  *  NSTextEffectAttributeName
  */
