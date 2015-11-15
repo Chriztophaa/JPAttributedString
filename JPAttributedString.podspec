@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'JPAttributedString/Classes/**/*'
+  s.ios.source_files = 'JPAttributedString/Classes/**/*'
+  s.tvos.source_files = 'JPAttributedString/Classes/**/*'
+  s.watchos.source_files = 'JPAttributedString/Classes/JPAttributedString.h,JPAttributedString/Classes/JPStringAttribute.h,JPAttributedString/Classes/JPStringAttribute.m,JPAttributedString/Classes/NSAttributedString+JPAttributedString.h,JPAttributedString/Classes/NSAttributedString+JPAttributedString.m,JPAttributedString/Classes/NSString+JPAttributedString.h,JPAttributedString/Classes/NSString+JPAttributedString.m'
 
   s.frameworks = 'UIKit'
 end
