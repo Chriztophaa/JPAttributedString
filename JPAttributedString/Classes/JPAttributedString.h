@@ -18,9 +18,12 @@ FOUNDATION_EXPORT const unsigned char JPAttributedStringVersionString[];
 
 #import "NSAttributedString+JPAttributedString.h"
 #import "NSString+JPAttributedString.h"
+
+#if TARGET_OS_IOS
 #import "UIButton+JPAttributedString.h"
 #import "UILabel+JPAttributedString.h"
 #import "UITextField+JPAttributedString.h"
 #import "UITextView+JPAttributedString.h"
+#endif
 
 #endif
