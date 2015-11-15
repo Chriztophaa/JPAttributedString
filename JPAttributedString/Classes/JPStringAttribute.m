@@ -69,10 +69,12 @@
     self.attributes[NSStrokeWidthAttributeName] = [strokeWidth copy];
 }
 
+#if TARGET_OS_IOS
 - (void)setShadow:(NSShadow *)shadow {
     _shadow = shadow;
     self.attributes[NSShadowAttributeName] = [shadow copy];
 }
+#endif
 
 - (void)setTextEffect:(NSString *)textEffect {
     _textEffect = [textEffect copy];
